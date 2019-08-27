@@ -1,9 +1,4 @@
-/*--
-Author: W3layouts
-Author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
---*/
+
 html,
 body {
 padding: 0;
@@ -412,7 +407,7 @@ background-size: cover;
 	.bottem-wthree-footer {
     background: #000;
 }
-.footer-w3layouts-bottem {
+.footer-bottem {
     background: #06121f;
 }
 a.move-top span {
