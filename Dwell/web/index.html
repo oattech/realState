@@ -1,13 +1,35 @@
 
 <!DOCTYPE html>
-<html lang="zxx">
+<html lang="en">
 
 <head>
-  <title>Dwell a Real Estate Category bootstrap Responsive website Template| Home </title>
+  <title>Dwell a Real Estate Category bootstrap Responsive website</title>
   <!--meta tags -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords" content="Dwell Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template"
   />
+  <!--------------------------------------style for login modal---------------------------------------->
+  <style type="text/css" media="screen">
+   
+</style>
+
+
+
+
+<!--script for login modal-->
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
   <script>
     addEventListener("load", function () {
       setTimeout(hideURLbar, 0);
@@ -20,6 +42,12 @@
   </script>
   <!--booststrap-->
   <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <!--//booststrap end-->
   <!-- font-awesome icons -->
   <link href="css/font-awesome.min.css" rel="stylesheet">
@@ -28,42 +56,44 @@
   <link href="css/style.css" rel='stylesheet' type='text/css' media="all">
   <!--//stylesheets-->
   <link href="//fonts.googleapis.com/css?family=Fahkwang:400,500,600,700" rel="stylesheet">
+
   <link href="//fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
 </head>
+  <body data-spy="scroll" data-target=".navbarScrollSpy" data-offset="1">
+<nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top " id="navbarScrollSpy" style=" height:70px;">   
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link" href="index.html" class="active">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#about">About Us</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#service">Services</a>
+    </li>
+    <li class="nav-item ">
+      <a class="nav-link" href="#gallery">Gallery</a>
+    </li>
+     <li class="nav-item ">
+      <a class="nav-link" href="#team">Team</a>
+    </li>
+     <li class="nav-item ">
+      <a class="nav-link" href="#blog">Blog</a>
+    </li>
+     <li class="nav-item ">
+      <a class="nav-link" href="#contact">Contact us</a>
+    </li>
+  </ul>
+    <div class="login-container d-inline-flex">
+   <button class="sign-up1 p-3 ml-5"  >Sign Up</button>
+<button class="login1 p-3 pl-4" onclick="document.getElementById('id01').style.display='block'" >  Login  </button>
+  </div>
+</nav>
 
-<body>
-  <!-- main -->
-  <div class="banner-left-side " id="home">
 
-    <div class=" banner-two-img">
-      <div class="logo">
-        <h1>
-          <a href="index.html">Dwell</a>
-        </h1>
-      </div>
-      <!-- menu -->
-      <!-- social-icons -->
-      <div class="social-icons">
-        <ul>
-          <li>
-            <a href="#" class="facebook">
-              <span class="fa fa-facebook"></span>
-            </a>
-          </li>
-          <li>
-            <a href="#" class="twitter">
-              <span class="fa fa-twitter"></span>
-            </a>
-          </li>
-          <li>
-            <a href="#" class="rss">
-              <span class="fa fa-rss"></span>
-            </a>
-          </li>
-        </ul>
-      </div>
-      <!--//social-icons -->
-      <nav>
+
+<!-- menu bar-->
+     <nav>
         <ul id="menu">
           <li>
             <input id="check02" type="checkbox" name="menu" />
@@ -75,7 +105,7 @@
                 <a href="index.html" class="active">Home</a>
               </li>
               <li>
-                <a href="#about">About Me</a>
+                <a href="#about">About Us</a>
               </li>
               <li>
                 <a href="#service">Services</a>
@@ -96,8 +126,77 @@
           </li>
         </ul>
       </nav>
+
+  <!-- main -->
+  <div class="banner-left-side " id="home" style="margin-top:50px;">
+
+    <div class=" banner-two-img">
+      <div class="logo">
+        <h1>
+          <a href="index.html">Dwell</a>
+        </h1>
+      </div>
+      </div>
+
+
+<!----------------------------------login button  section ----------------------------------------------------> 
+
+<div id="id01" class="modal">  
+  <form class="modal-content animate">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="img_avatar2.png" width="50px" height="200px" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>  
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+
+<!--------------------------------------------------------->
+
+      <div class="clearfix">
+      <!-- menu -->
+      <!-- social-icons -->
+      <div class="social-icons float-sm-right">
+        <ul>
+          <li>
+            <a href="#" class="facebook">
+              <span class="fa fa-facebook"></span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="twitter">
+              <span class="fa fa-twitter"></span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="rss">
+              <span class="fa fa-rss"></span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!--//social-icons -->
+ 
       <!-- //menu -->
     </div>
+
     <!-- banner -->
     <div class="container">
       <div class="banner-right-txt ">
@@ -109,10 +208,11 @@
       </div>
     </div>
   </div>
+ 
   <!-- //banner -->
   <!-- about -->
   <section class="about py-lg-4 py-md-3 py-sm-3 py-3" id="about">
-    <div class="container py-lg-5 py-md-4 py-sm-4 py-3">
+    <div class="container py-lg-5 py-md-4 py-sm-4 py-3" id="about">
       <div class="row">
         <div class="col-lg-6 about-two-grids">
           <h3 class="title mb-md-4 mb-sm-3 mb-3">Few Words About Us</h3>
@@ -139,6 +239,58 @@
     </div>
   </section>
   <!-- //about -->
+
+
+  <!--Top property Trends--->
+<div class="container-fluid top-listings bg-dark">
+  <div class="row textPart">
+    <div class="col-m">
+  <h2 class="row1h text-white bg-dark top_listings text-center ">Our top property Listings</h2>
+  <p  class="row1p text-justifys text-monospace text-white">A home to about 11 million people, Bangalore, now known as Bengaluru, is India''s fourth largest city after Delhi, Kolkata and Mumbai. There is no doubt about the fact that Bangalore unique climate has always attracted people to relocate from all parts of India. The climate in Bangalore is so pleasant and calming that it lets you have a whale of a time. The city has become the 4th largest technology hub in the world after London, Boston and San Francisco. The IT/ITES sector in Bangalore generates approximately two-third jobs and many known IT companies like Wipro, Infosys, Tata Consultancy Services, Oracle, IBM, Accenture and a lot more have set up their offices in the city. Whitefield and Electronics City are the two prime hubs of the IT industry in the city. Some of the famous posh residential areas in Bangalore are Hennur, Electronic City, Bannerghatta Road, Whitefield, North Bangalore, Malleshwaram, Basavangudi, Richmond Town, Rajaji Nagar, Indira Nagar, Koramangala, Benson Town, Ulsoor, Jayanagar etc.  </p>
+  </div>
+</div>
+  <div class="row" id="animated-counter">
+      <div class="col-sm-2 ">
+        <div class="stat-items">
+          <h2><span class="counter text-center">4596</span><span>+</span></h2>
+          <p>Luxury Flats In bangalore</p>
+      </div>
+    </div>
+        <div class="col-sm-2">
+          <div class="stat-items">
+          <h2><span class="counter text-center">3687</span><span>+</span></h2>
+          <p>Low budget Flats In bangalore</p>
+      </div>
+      </div>
+      <div class="col-sm-2">
+          <div class="stat-items">
+          <h2><span class="counter text-center">2587</span><span>+</span></h2>
+          <p>Residential Projects In bangalore </p>
+      </div>
+      </div>
+        <div class="col-sm-2">
+          <div class="stat-items">
+          <h2><span class="counter text-center">7851</span><span>+</span></h2>
+          <p>Residential Property Agents In bangalore</p>
+      </div>
+      </div>
+        <div class="col-sm-2">
+            <div class="stat-items">
+          <h2><span class="counter text-center">4596</span><span>+</span></h2>
+          <p>Property For sale in bangalore</p>
+      </div>
+      </div>
+        <div class="col-sm-2">
+            <div class="stat-items">
+          <h2><span class="counter text-center">3674</span><span>+</span></h2>
+          <p>Property For rent in bangalore</p>
+      </div>
+      </div>
+  </div>
+</div>
+
+
+
   <!-- service -->
   <section class="service py-lg-4 py-md-3 py-sm-3 py-3" id="service">
     <div class="container py-lg-5 py-md-4 py-sm-4 py-3">
@@ -595,7 +747,7 @@
     <div class="container py-lg-5 py-md-4 py-sm-4 py-3">
       <h3 class="title mb-md-4 mb-sm-3 mb-3">Get In Touch</h3>
 
-      <form action="#" method="post">
+      <form  method="post" action="contact.php" role="form">
         <div class="row">
           <div class="col-lg-6 col-md-6 form-group contact-forms">
             <input type="text" class="form-control" placeholder="First Name" required="">
@@ -622,14 +774,14 @@
   <section>
     <div class="container-fulid">
       <div class="address_mail_footer_grids">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3539.812628729253!2d153.014155!3d-27.4750921!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b915a0835840a2f%3A0xdd5e3f5c208dc0e1!2sMelbourne+St%2C+South+Brisbane+QLD+4101%2C+Australia!5e0!3m2!1sen!2sin!4v1492257477691"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7778.041304349166!2d77.59012540000002!3d12.906393499999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1513dd228fc1%3A0x46be058d481590c7!2sCanara+Bank!5e0!3m2!1sen!2sin!4v1565594237369!5m2!1sen!2sin" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
       </div>
     </div>
   </section>
   <!-- map -->
   <!-- //contact -->
   <!-- footer -->
-  <section class="footer-bottem py-lg-3 py-md-2 py-sm-3 py-2">
+  <section class="footer-w3layouts-bottem py-lg-3 py-md-2 py-sm-3 py-2">
     <div class="container py-lg-4 py-md-4 py-sm-3 py-3">
       <div class="row">
         <div class="col-lg-6 col-md-6 col-sm-6 footer-bottom-txt">
@@ -649,7 +801,7 @@
               <span> Phone</span> :+(000) 123 4565 32</p>
             <p class="pt-2">
               <span>Email</span> :
-              <a href="mailto:info@example.com">info@example1.com</a>
+              <a href="mailto:studmanish007@gmail.com">studmanish007@gmail.com</a>
             </p>
           </div>
           <div class="team-icons mt-lg-4 mt-3">
@@ -687,9 +839,26 @@
   <footer class="bottem-wthree-footer text-center py-md-4 py-3">
     <p>
       © 2019 Dwell. All Rights Reserved | Design by
-      <a href="http://www.objectapar.in" target="_blank">Object Apar Technologies</a>
+    <a href="http://www.objectapar.in" target="_blank">Object Apar Technologies</a>
     </p>
   </footer>
+  <!--//footer-copy-right -->
+
+ <!-------------Srcipt for top listing property---------->
+
+
+ <script src="jquery.counterup.min.js">
+</script>
+<script src="jquery.waypoints.min.js"></script>
+<script>
+  jQuery(document).ready(function(){
+    $('.counter').counterUp({
+    delay: 10,
+    time: 1000
+}); 
+  });
+</script>
+
 
 </body>
 
